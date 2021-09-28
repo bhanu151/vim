@@ -24,6 +24,10 @@ Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'scrooloose/syntastic'
 Plug 'valloric/youcompleteme'
+Plug 'preservim/nerdcommenter'
+Plug 'lervag/vimtex'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+Plug 'will133/vim-dirdiff'
 "Plug 'sheerun/vim-polyglot'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
@@ -60,7 +64,11 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
+"###############################################################################
+" Vim-latex-live-preview settings
+" ##############################################################################
+let g:livepreview_engine = 'latexmk' 
+
 
 colorscheme gruvbox
 set background=dark
-
